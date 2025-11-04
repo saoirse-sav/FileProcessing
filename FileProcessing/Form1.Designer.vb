@@ -24,6 +24,8 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ButtonRead = New System.Windows.Forms.Button()
+        Me.Readmeperline = New System.Windows.Forms.Button()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'Button1
@@ -37,18 +39,37 @@ Partial Class Form1
         '
         'ButtonRead
         '
-        Me.ButtonRead.Location = New System.Drawing.Point(438, 159)
+        Me.ButtonRead.Location = New System.Drawing.Point(363, 159)
         Me.ButtonRead.Name = "ButtonRead"
         Me.ButtonRead.Size = New System.Drawing.Size(75, 23)
         Me.ButtonRead.TabIndex = 1
         Me.ButtonRead.Text = "Read me :P"
         Me.ButtonRead.UseVisualStyleBackColor = True
         '
+        'Readmeperline
+        '
+        Me.Readmeperline.Location = New System.Drawing.Point(465, 159)
+        Me.Readmeperline.Name = "Readmeperline"
+        Me.Readmeperline.Size = New System.Drawing.Size(114, 23)
+        Me.Readmeperline.TabIndex = 2
+        Me.Readmeperline.Text = "Read me per line :P"
+        Me.Readmeperline.UseVisualStyleBackColor = True
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(338, 204)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(120, 95)
+        Me.ListBox1.TabIndex = 3
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.Readmeperline)
         Me.Controls.Add(Me.ButtonRead)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
@@ -59,4 +80,6 @@ Partial Class Form1
 
     Friend WithEvents Button1 As Button
     Friend WithEvents ButtonRead As Button
+    Friend WithEvents Readmeperline As Button
+    Friend WithEvents ListBox1 As ListBox
 End Class
