@@ -17,4 +17,13 @@ Public Class Form1
 
         MessageBox.Show("Data written successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
+
+    Private Sub ButtonRead_Click(sender As Object, e As EventArgs) Handles ButtonRead.Click
+        Dim filePath As String = "sample.txt"
+
+        Using Reader As New StreamReader(filePath)
+            Dim content As String = Reader.ReadToEnd()
+            MessageBox.Show(content, "File Content: ")
+        End Using
+    End Sub
 End Class
